@@ -1,0 +1,375 @@
+----------------------------------------------NOTES-----------------------------------------------------
+
+
+.hello world
+{
+	System.out.print("HELLO");  //valid!!
+	System.out.print('HELLO');  //INvalid!! not in single cotes    //unclosed
+	character literal
+
+	//type jshell to open jshell in terminal
+	//
+}
+
+
+.variables
+{
+	int myFirstNumber = 4;
+	myFirstNumber = 6;  //no need to reuse int
+	myFirstNumber = (5+6)+(2*8);  //complex
+}
+
+.starting out with expressions
+{
+	//type /var in jshell to see your declared variables
+}
+
+
+.primitive data types
+{
+	whole numbers
+	( byte short int long )
+
+	Real number(floating point or decimals)
+	( float  double )
+
+	Single characters 
+	( char )
+
+	Boolean Values
+	( boolean )
+
+
+	//each primitive data type has its max and min value defined in java
+
+	int MyMinIntValue = Integer.MIN_VALUE ; 
+	// it equals to -2 billion ,147483648;
+
+	int MyMaxIntValue = Integer.MAX_VALUE;
+	/ it equals to  2 billion ,147483647;
+
+	System.out.print("Integer Min max range is ( " + Integer.MIN_VALUE +" to "+ Integer.MAX_VALUE+ ")");
+
+
+	.wrapper class
+	{
+	  byte     - Byte
+	  short    - Short 
+	  char     -  Character
+	  int      -  Integer
+	  long     - Long
+	  float    - Float
+	  double   - Double
+	  boolean  - Boolean
+
+
+	  .integer wrapper class
+	  {
+	  	int myMinIntValue = Integer.MIN_VALUE;
+	  	int myMaxIntValue = Integer.MAX_VALUE;
+
+
+	  	System.out.print(" Busted " +( MyMaxIntValue+1));
+	  	//min value   overflow
+	  	System.out.print(" Busted " +( MyMinIntValue-1));
+	  	//max value  Underflow
+	  	//overflow and underflow are also called as wraparounds
+
+
+	  	//AS a Developer, you need to be aware that this can happen, and choose the appropriate data type
+
+	  	//you cannot use commas to make the number more readable for eg: int abc=343,343,343;
+	  	//instead you can use underscores: int abc = 121_23_232_232;
+	  	//you cannot use it at the start and end of the integer;
+ 
+	  }
+
+	  .Byte
+	  {
+	  	System.out.print("Byte value range ("+Byte.MIN_VALUE+ " to " +Byte.MAX_VALUE +" )");
+	  	//range -128 to 127
+	  }
+	  .Short
+	  {
+	  	System.out.print("Short value range ("+Short.MIN_VALUE+ " to " +Short.MAX_VALUE +" )");
+	  	//Short value range (-32768 to 32767 )
+	  }
+
+
+	  //width in bits
+	  //byte  = 8
+	  //short = 16
+	  //int   = 32 
+	  //Long  = 64
+
+	}
+
+	.long
+	{
+		long myLongValue = 100L;
+		// its not case sensitive you can use l or L
+		System.out.print("A Long has a width of " +Long.SIZE);
+		//A Long has a width of 64
+		//use l, or java will treat the number as integer , which is valid till the max value of int
+
+	}
+}
+
+.casting in java
+{
+	byte myMinByteValue = Byte.MIN_VALUE , myMaxByteValue = Byte.MAX_VALUE;
+	//redclare multiple variables in one statement    // use commas
+
+			byte myNewByteValue = (myMinByteValue/2);
+		|  Error:
+		|  incompatible types: possible lossy conversion from int to byte
+		|  byte myNewByteValue = (myMinByteValue/2);
+		|                         ^--------------^
+
+			//java treats the myMinByteValue as integer
+			//we will avoid an error the using the concept call casting
+
+
+	//casting means converting the data from one type or another
+	byte myNewByteValue = (byte) (myMinByteValue/2);
+
+
+}
+
+
+.float and double primitive data types
+{
+	//the double data type is java default for real numbers
+	//as same as java has chosen to use an int for its default data type number
+	//specified as capital or small D,d
+	//float as f or F
+
+	float myOtherFloatValue = 5.55;  //will give an error because default double
+
+	//and java wakesup after you declare it in decimal and cant convert it(gives error as lossy conversion)
+
+	.jshell
+	{
+		jshell> myIntValue = 5/3;
+		myIntValue ==> 1
+
+		jshell> myFloatValue = 5f/3f;
+		myFloatValue ==> 1.6666666
+
+		jshell> myDoubleValue = 5d/3d;
+		myDoubleValue ==> 1.6666666666666667
+
+		jshell> myDoubleValue = 5/3;
+		myDoubleValue ==> 1.0
+
+		jshell> myDoubleValue = 5.0/3;
+		myDoubleValue ==> 1.6666666666666667
+
+		jshell> myDoubleValue = 5.0/3.0;
+		myDoubleValue ==> 1.6666666666666667
+	}
+
+
+	//why we choose double
+	{
+		it is actuall faster to process in many modern computers
+
+		because computers has chip level functionality to actually deal with this doubles rather than float
+
+		the java libraries particularly math funtions are often written to process doubles not floats and to return the results as doubles
+
+		the creators of java secleted double because it is more precise and it can handle large range of numbers
+
+	}
+
+}
+
+
+.char and boolean data types
+{
+	char mychar = 'D';
+	//use single cotes
+	//only one letter
+
+	//unlike String, which can hold multiple characters and uses double cotes
+
+
+	//usecases of char
+	//to store last key pressed in a game
+	//to loop programmitacilly through the letters in an alphabet
+
+
+	//there are three ways to assign a char
+	char myUnicode = '\u0044';
+	char myDecimalcode = 68;
+	//this will give D
+
+
+	.boolean
+	{
+		//these are two values 1 or 0, true or false
+		boolean myTrueBooleanValue = true;
+	}
+}
+
+.string
+{
+	String myString = "This is a String ";
+
+	//concatenation
+	myString = myString + ",and this is more";
+
+	//you can also use unicode characters in a string
+	myString = "I wish i had \u00241,000,000.00";
+
+	//there are two ways to execute a statement in a jshell 
+	//put your statement in a single line
+	//enclose your statement in curly braces
+
+	//concaneting anything after string is text to the initial string
+	String lastString = "10";int myInt = 50;
+	lastString = lastString + myInt;
+	lastString ==> "1050"
+	//same with double
+
+	//strings are immutable
+	//means if you go with the last example, java created the new string in the value and the old
+	//one will get discarded from memory automatically
+
+	//so appending values in a string is generally not recommended
+
+	//for this problem we use StringBuilder class
+	//StringBuilder class are mutable but does not share the special features, such as being able 
+	//to assign it a string literal or use the + operator on it.
+
+
+	//String is not a primitive type, its a class
+}
+
+.opeartors
+{
+	//an operand is the term used to describe any object that is manipulated by an operator
+
+	//an expression is formed by combining variables, literals, method return values and operators
+	//me=equation after the equal to sign
+
+	char myfirstchar = 'A'; char mysecondchar = 'B';
+	System.out.print(myfirstchar + mysecondchar);
+	//this will give 131 
+	//because char is stored as 2 byte numbers in the memory
+	//so these numbers are add, i.e in these case 65 and 66
+	//characters dont get concatenated
+	//if you wanna concatenate it then do
+	System.out.print(""+myfirstchar+mysecondchar)
+
+	.Remainder operator   %
+	{
+		//it is also called modulus, modulo, or mod
+
+		int rem = 10;
+		rem % 2 = 0;
+		rem % 3 = 1;
+	}
+
+	.All opeartors we used
+	{
+		addition           (+)
+		substraction       (-)
+		multiplication     (*)
+		division           (/)
+		remainder          (%)
+
+	}
+
+	.abbreviating oprators
+	{
+		//incrementing by one is a very common requirement in programming
+
+
+		//obivious way 
+		result = result +1;
+
+		//or
+
+		//post fix increment 
+		result++;     			//post fix increment operator
+		//OR
+		result+=1;              //compound operator with + sign
+
+
+		//decrementing is also very common
+		//instead of + use -
+		//post fix decrement operator 
+		//and
+		//compound operator with - sign
+
+
+
+		//same you can do with  *   and   /
+
+
+
+
+		.NOTE -----IMPORTANT
+		{
+
+			//
+			{
+  	    		int result = 10;
+     			result -= 5.5;
+  				System.out.print(result);
+ 			}
+ 			//
+ 			//will give 4
+
+ 			//but
+ 			//
+ 			{
+       			int result = 10;
+        		result = result - 5.5;
+        		System.out.print(result);
+    		}
+    		//
+    		//will give error -lossy conversion from double to int
+
+    		//this is because (result -=5.5 ) is actually
+    		//result = (int) (result - 5.5)
+
+		    		.optional
+		    		{
+		    			result = (int) result - 5.5;
+		    			//will give same error
+		    			//result  = (int) (result - 5.5);    //is correct
+		    		}
+
+
+
+		    //in summery 
+		    x -= y;
+
+		    //is actually
+
+		    x = (data type of x) (x-y);
+
+		}
+
+
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

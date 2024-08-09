@@ -1,0 +1,18 @@
+pojo = plain old java object 
+getters and setters and private;
+default constructor and toString
+
+record in java  -- java calls them plain data carriers
+immutable
+create new file of record
+public record LPAStudent(String id, String name, String dob, String classList){
+	
+}
+this will automatically have getters,toString, constructor but not setters
+the part in the parenthesis is called record header
+String id,... are called fields
+these are declared private and final
+LPAStudent rec = new...
+rec.name() -- no getName!!
+
+no setters cause its immutable	
