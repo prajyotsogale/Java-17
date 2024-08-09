@@ -1,0 +1,103 @@
+-----------------------------Starting with intellij------------------------------------
+
+
+//////////////////////////
+JDK is effectively a Software Development Kit,SDK.
+it contains tools you need to write a programs. The Java Development kit, includes 
+the tools that enables the computer to understand the java code, and to execute it.
+it also has a debugger.
+///////////////////////////
+
+
+
+.configuration of intellij
+{
+	//////
+	in 
+	.settings ==> editor ==> autoimport   (click the two check boxes where there is 
+										   question mark [...on the fly])
+
+	. in code folding
+	deselect - file header, imports, one line methods, closures.., generics , 
+}
+
+
+//it is generally not recommended to add spaces in the project name
+//instead of it use capital letters at the start(camelcase)
+//upper camel case capitalise the first letter
+//lower camel case does not(e.g- getData)
+
+
+
+
+
+
+//in src open new java class file
+//shortcut - psvm
+
+
+//in output tab
+//first line is the command that intellij sends to java to execute the program
+//exit code with no zero means no problem
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+public class FirstClass
+{
+    public static void main(String[] args) {
+        System.out.print("Hello World");
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+The public is the java keyword is called as an access modifier
+Access modifiers helps you manage how different parts of your code interact and help
+you control who can use and modify certain elements of your program
+
+The class keyword is use to define a class
+
+main method
+the method is the collection of statements, one or more that, that performs an operation.
+special method (main method) 
+java looks for the main method to start and run the program when we use it.
+
+void - used to indicate that the method won't return any information
+
+curly braces - is the way to group statement together
+
+
+
+
+
+.how to copy and paste downloaded code
+{
+	double click on the code and open in finder
+	open the file (in sublime)
+	grab the main method
+}
+
+
+System.out.println      ------  adds new line after it
+
+boolean MyValue = false;
+
+//if you put semicolon means the statement is completed
+
+
+if statement syntax
+if (expression){
+  		//code
+}
+
+if (topScore > secondTopScore && topScore<100){
+            System.out.println("Greater than second top score and less than 100");
+            }
+
+&&   - logical and operator
+
+
+
+
+
