@@ -24,6 +24,9 @@ class Adventure extends Movie{
     public Adventure(String title) {
         super(title);
     }
+    public void sayAdventure(){
+        System.out.println("This is a Adventure movie");
+    }
 
     @Override
     public void watchMovie() {
@@ -37,6 +40,9 @@ class Comedy extends Movie{
         super(title);
     }
 
+    public void sayComedy(){
+        System.out.println("This is a Comedy movie");
+    }
     @Override
     public void watchMovie() {
         super.watchMovie();
@@ -49,6 +55,9 @@ class Scifi extends Movie{
         super(title);
     }
 
+    public void sayScifi(){
+        System.out.println("This is a scifi movie");
+    }
     @Override
     public void watchMovie() {
         super.watchMovie();
