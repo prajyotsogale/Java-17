@@ -1,12 +1,17 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         int[] rArray = generateRandomArray(10);
+//        int[] re = Arrays.copyOf(rArray);
         System.out.println("Array before sorting");
         System.out.println(Arrays.toString(rArray));
         Arrays.sort(rArray);
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
         System.out.println("Sorted array in ascending order");
         System.out.println(Arrays.toString(rArray));
         System.out.println("Sorted array in descending order");
