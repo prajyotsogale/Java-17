@@ -2,10 +2,16 @@ package com.learning;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Locale;
 
 record GroceryItem(String name, String type, int count){
     public GroceryItem(String name){
         this(name,"Dairy",1);
+    }
+
+    @Override
+    public String toString(){
+        return String.format("%d %s in %s",count,name.toUpperCase(),type);
     }
 }
 
@@ -28,5 +34,12 @@ public class Main {
         ArrayList<GroceryItem> groceryList = new ArrayList<>();
         groceryList.add(new GroceryItem("butter"));
         groceryList.add(new GroceryItem("biscuit"));
+        groceryList.add(new GroceryItem("eggs", "produce",6));
+        //use set method instead of an add method to replace the entry
+        groceryList.set(0,new GroceryItem("apples","produce",1));
+
+        groceryList.remove(1);
+
+        System.out.println(groceryList);
     }
 }
