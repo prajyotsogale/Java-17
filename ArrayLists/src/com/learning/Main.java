@@ -2,7 +2,6 @@ package com.learning;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Locale;
 
 record GroceryItem(String name, String type, int count){
     public GroceryItem(String name){

@@ -21,6 +21,34 @@ public class MoreLists {
 
         groceries.addAll(anotherList);
         System.out.println(groceries);
+        groceries.add("milk");
+        //.get method
+        System.out.println("third item : "+groceries.get(3));
+
+        //.contains method
+        if(groceries.contains("eggs")){
+            System.out.println("the list contains eggs");
+        }
+
+        //finding elements
+        System.out.println("first = "+groceries.indexOf("milk"));
+        System.out.println("last = "+groceries.lastIndexOf("milk"));
+
+        //remove elements
+        groceries.remove(1);
+        System.out.println(groceries);
+        groceries.remove("yogurt");
+        System.out.println(groceries);
+
+        groceries.removeAll(List.of("milk","eggs"));
+        System.out.println(groceries);
+
+        groceries.retainAll(List.of("salt","apples"));
+        System.out.println(groceries);
+
+        groceries.clear();
+        System.out.println(groceries);
+        System.out.println("isEmpty = "+groceries.isEmpty());
 
     }
 }
