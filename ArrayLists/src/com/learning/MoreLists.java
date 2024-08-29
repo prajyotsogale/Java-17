@@ -1,6 +1,8 @@
 package com.learning;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class MoreLists {
@@ -49,6 +51,19 @@ public class MoreLists {
         groceries.clear();
         System.out.println(groceries);
         System.out.println("isEmpty = "+groceries.isEmpty());
+
+        groceries.addAll(List.of("apple","banana","coconut","watermelon"));
+        groceries.addAll(Arrays.asList("pomegranate","milk","eggs"));
+        System.out.println(groceries);
+
+        groceries.sort(Comparator.naturalOrder());
+        System.out.println(groceries);
+        groceries.sort(Comparator.reverseOrder());
+        System.out.println(groceries);
+
+        var groceryArray = groceries.toArray(new String[groceries.size()]);
+        System.out.println(Arrays.toString(groceryArray));
+        System.out.println(groceries.getClass().getName());
 
     }
 }
