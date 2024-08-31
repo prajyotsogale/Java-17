@@ -1,13 +1,20 @@
 import java.util.ArrayList;
 
 public class Main {
+
     public static void main(String[] args) {
-        ArrayList<Integer> s = new ArrayList<>();
-        s.add(1);
-        s.add(2);
-        s.add(3);
-        System.out.println(s);
-        s.add(s.indexOf())
-        System.out.println(s.contains(3));
+        MobilePhone mobilePhone = new MobilePhone("234234");
+        System.out.println(mobilePhone);
+        Contact contact1 = new Contact("aaaaa","aaaaa");
+        Contact contact2 = new Contact("bbbbb","bbbbb");
+        mobilePhone.addNewContact(contact1);
+        mobilePhone.addNewContact(contact2);
+        System.out.println(mobilePhone.addNewContact(contact1));
+        mobilePhone.printContacts();
+
+
     }
+
+
+
 }
