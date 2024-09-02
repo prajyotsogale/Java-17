@@ -8,8 +8,11 @@ public class Main {
         System.out.println(placesToVisit);
         addMoreElements(placesToVisit);
         System.out.println(placesToVisit);
-        removeElements(placesToVisit);
-        System.out.println(placesToVisit);
+//        removeElements(placesToVisit);
+//        System.out.println(placesToVisit);
+
+        gettingElements(placesToVisit);
+
     }
 
     private static void addMoreElements(LinkedList<String> list){
@@ -55,5 +58,20 @@ public class Main {
         String p4 = list.pop();
         System.out.println(p4+ " was removed");
 
+    }
+
+    private static void gettingElements(LinkedList<String> list){
+        System.out.println("Retrieved Element = "+list.get(4));
+        System.out.println("First Element = "+list.getFirst());
+        System.out.println("Last Element = "+list.getLast());
+
+        System.out.println("Index of mumbai = "+list.indexOf("Mumbai"));
+        System.out.println("Last Index of kolkata = "+list.lastIndexOf("Kolkata"));
+
+        //queue retrieval method
+        System.out.println("Element from element = "+list.element());
+        //stack retrieval method
+        System.out.println("Element from peekfirst() :"+list.peekFirst());
+        System.out.println("Element from peeklast() :"+list.peekLast());
     }
 }
