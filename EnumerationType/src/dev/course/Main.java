@@ -15,6 +15,7 @@ public class Main {
 //            if(DaysOfTheWeek.FRI == day){
 //                System.out.println("FOUND");}
             switchDaysOfTheWeek(day);
+
         }
     }
 
