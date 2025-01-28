@@ -15,6 +15,7 @@ public class Test {
         if( flier instanceof Trackable tracked){
             tracked.track();
         }
+        
         flier.land();
     }
 
