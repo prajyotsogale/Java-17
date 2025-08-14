@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildTimesService">
+    <option name="buildEndTimes">
+      <map>
+        <entry key="1748240495249" value="1748240496811" />
+        <entry key="1748240561448" value="1748240562554" />
+        <entry key="1748240578034" value="1748240578643" />
+        <entry key="1748240627351" value="1748240627991" />
+        <entry key="1748240666021" value="1748240666609" />
+        <entry key="1748241099564" value="1748241100575" />
+        <entry key="1748241123300" value="1748241123839" />
+        <entry key="1748242725988" value="1748242726576" />
+        <entry key="1748242747419" value="1748242747606" />
+        <entry key="1748243124983" value="1748243125569" />
+        <entry key="1748243138937" value="1748243139558" />
+        <entry key="1748243459531" value="1748243460132" />
+        <entry key="1748250411367" value="1748250412538" />
+        <entry key="1748250415150" value="1748250415318" />
+        <entry key="1748250424140" value="1748250424700" />
+        <entry key="1748250428872" value="1748250429408" />
+        <entry key="1748250949592" value="1748250950183" />
+        <entry key="1748250969074" value="1748250969634" />
+        <entry key="1748250973669" value="1748250974189" />
+        <entry key="1748251480624" value="1748251481202" />
+        <entry key="1748251482686" value="1748251483353" />
+        <entry key="1748251547524" value="1748251548114" />
+      </map>
+    </option>
+    <option name="buildStartTimes">
+      <list>
+        <option value="1748240495249" />
+        <option value="1748240561448" />
+        <option value="1748240578034" />
+        <option value="1748240627351" />
+        <option value="1748240666021" />
+        <option value="1748241099564" />
+        <option value="1748241123300" />
+        <option value="1748242725988" />
+        <option value="1748242747419" />
+        <option value="1748243124983" />
+        <option value="1748243138937" />
+        <option value="1748243459531" />
+        <option value="1748250411367" />
+        <option value="1748250415150" />
+        <option value="1748250424140" />
+        <option value="1748250428872" />
+        <option value="1748250949592" />
+        <option value="1748250969074" />
+        <option value="1748250973669" />
+        <option value="1748251480624" />
+        <option value="1748251482686" />
+        <option value="1748251547524" />
+      </list>
+    </option>
+    <option name="buildSuccessful">
+      <map>
+        <entry key="1748240495249" value="true" />
+        <entry key="1748240561448" value="true" />
+        <entry key="1748240578034" value="true" />
+        <entry key="1748240627351" value="true" />
+        <entry key="1748240666021" value="true" />
+        <entry key="1748241099564" value="false" />
+        <entry key="1748241123300" value="true" />
+        <entry key="1748242725988" value="true" />
+        <entry key="1748242747419" value="true" />
+        <entry key="1748243124983" value="true" />
+        <entry key="1748243138937" value="true" />
+        <entry key="1748243459531" value="true" />
+        <entry key="1748250411367" value="true" />
+        <entry key="1748250415150" value="true" />
+        <entry key="1748250424140" value="true" />
+        <entry key="1748250428872" value="true" />
+        <entry key="1748250949592" value="true" />
+        <entry key="1748250969074" value="true" />
+        <entry key="1748250973669" value="true" />
+        <entry key="1748251480624" value="true" />
+        <entry key="1748251482686" value="true" />
+        <entry key="1748251547524" value="true" />
+      </map>
+    </option>
+  </component>
+</project>

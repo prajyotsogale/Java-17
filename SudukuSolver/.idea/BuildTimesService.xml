@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildTimesService">
+    <option name="buildEndTimes">
+      <map>
+        <entry key="1748586528736" value="1748586530200" />
+        <entry key="1748586570130" value="1748586571302" />
+        <entry key="1748586739974" value="1748586740605" />
+        <entry key="1748587002768" value="1748587003449" />
+        <entry key="1748587046000" value="1748587046672" />
+        <entry key="1748587086064" value="1748587086223" />
+        <entry key="1748588882303" value="1748588882959" />
+      </map>
+    </option>
+    <option name="buildStartTimes">
+      <list>
+        <option value="1748586528736" />
+        <option value="1748586570130" />
+        <option value="1748586739974" />
+        <option value="1748587002768" />
+        <option value="1748587046000" />
+        <option value="1748587086064" />
+        <option value="1748588882303" />
+      </list>
+    </option>
+    <option name="buildSuccessful">
+      <map>
+        <entry key="1748586528736" value="true" />
+        <entry key="1748586570130" value="true" />
+        <entry key="1748586739974" value="true" />
+        <entry key="1748587002768" value="true" />
+        <entry key="1748587046000" value="true" />
+        <entry key="1748587086064" value="true" />
+        <entry key="1748588882303" value="true" />
+      </map>
+    </option>
+  </component>
+</project>

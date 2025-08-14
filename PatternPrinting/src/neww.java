@@ -1,6 +1,7 @@
 public class neww {
     public static void main(String[] args){
-        reverseNumberTrianglePattern(5);
+//        reverseNumberTrianglePattern(5);
+        butterflyPattern(5);
     }
     public static void butterflyPattern(int number){
         for(int i=1;i<=number;i++){
